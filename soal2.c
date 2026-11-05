@@ -57,7 +57,7 @@ int main() {
         char key[100];
         char K2[100];
         scanf("%d %99s %99s", &idx, key, K2);
-        if (strcasecmp(key, K) == 0) {
+        if (strcmp(key, K) == 0) {
             paket[total_valid].idx = idx;
             strcpy(paket[total_valid].K2, K2);
             reverse(paket[total_valid].K2);
