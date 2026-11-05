@@ -56,7 +56,9 @@ int main() {
         int idx;
         char key[100];
         char K2[100];
-        scanf("%d %99s %99s", &idx, key, K2);
+        if (scanf("%d %99s %99s", &idx, key, K2) != 3) {
+        break;
+        }
         if (strcmp(key, K) == 0) {
             paket[total_valid].idx = idx;
             strcpy(paket[total_valid].K2, K2);
